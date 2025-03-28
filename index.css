@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1a1a2e, #16213e); /* Dark blue gradient background */
+    color: white; /* White text color */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 320px;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1); /* Transparent white background */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2); /* White glow effect */
+}
+
+.heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px cyan; /* Cyan glowing effect */
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#display {
+    width: 90%;
+    height: 50px;
+    font-size: 24px;
+    text-align: right;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2); /* Light white transparent background */
+    color: white; /* White text */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(0, 255, 255, 0.3); /* Light cyan background */
+    color: white; /* White text */
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: rgba(0, 255, 255, 0.5); /* Darker cyan when hovered */
+}
+
+.equal {
+    grid-column: span 2;
+    background: rgba(0, 255, 127, 0.5); /* Greenish cyan background for equal button */
+}
+
+.equal:hover {
+    background: rgba(0, 255, 127, 0.7); /* Brighter greenish cyan when hovered */
+}
+
+.zero {
+    grid-column: span 2;
+}
